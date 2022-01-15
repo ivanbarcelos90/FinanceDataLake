@@ -1,2 +1,4 @@
-def pow(x: int) -> int:
-    pass
+def power(x, y):
+    return pow(x, y)
+
+
