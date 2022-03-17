@@ -1,5 +1,5 @@
 # Call function from API
-import api_yahoo_finance as api
+import api_display_stock as api
 
 # Call API class 
 stock = api.APIStock('MSFT') # Microsoft stock
@@ -15,4 +15,5 @@ stock.history()
 
 # # Call news
 # stock.news()
+
 
