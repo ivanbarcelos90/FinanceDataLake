@@ -88,3 +88,6 @@ config.env
 
 #Visual Studio Code
 .vscode
+
+# Stock_list
+/Investigações/Stock_List
