@@ -15,8 +15,7 @@ symbol = pd.read_csv(p, nrows=8188) # nrows got 8188 symbols
 # tickerStrings = ['AAPL', 'MSFT'] # Test symbol
 tickerStrings = symbol['Symbol'] # All symbols
 
-# prd = '1d'
-prd = 'max'
+prd = '1d'
 intv = '1d'
 df = pd.DataFrame()
 for ticker in tickerStrings:
