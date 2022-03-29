@@ -23,7 +23,8 @@ for ticker in tickerStrings:
     data['ticker'] = ticker  # add this column because the dataframe doesn't contain a column with the ticker
     data['Event'] = datetime.now()
     data.reset_index(inplace=True) 
-    df = df.append(data)
+    # df = df.append(data)
+    df = [df for df in data]
 
 df.to_csv(abspath(f'./Investigações/Stock_Data/{datetime.now().strftime("%Y_%m_%d_%H%M%S")}_stock_all.csv'), index=False)  
       
