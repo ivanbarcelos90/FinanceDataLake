@@ -94,4 +94,4 @@ config.env
 /Investigações/Stock_Data
 
 #DEV Container
-.dev_container/
+/.dev_container/
