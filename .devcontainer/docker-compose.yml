@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  finance_data_lake:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile 
+    volumes:
+      - ..:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+    stdin_open: true
+    tty: true
+    networks:
+      - "local"
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566"
+      - "4571:4571"
+    environment:
+      - DATA_DIR=/tmp/localstack/data
+    volumes:
+    - ../.cache/localstack:/tmp/localstack
+    networks:
+      - "local"
+  dynamoDb-admin:
+    image: aaronshaf/dynamodb-admin
+    depends_on:
+      - "localstack"
+    ports:
+      - "8001:8001"
+    environment:
+      - DYNAMO_ENDPOINT=http://localstack:4566
+    networks:
+      - "local"
+
+networks:
+  local:
+    driver: bridge

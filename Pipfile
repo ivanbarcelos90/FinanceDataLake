@@ -6,11 +6,15 @@ name = "pypi"
 [packages]
 pytest = "*"
 pytest-cov = "*"
+yfinance = "*"
+boto3 = "*"
 
 [dev-packages]
 flake8 = "*"
 pylint = "*"
 bandit = "*"
+awscli-local = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3.10.1"
