@@ -90,8 +90,14 @@ config.env
 .vscode
 
 # Stock_list
-/Investigações/Stock_List
-/Investigações/Stock_Data
+stock_list
+stock_data
 
-#DEV Container
+# DEV Container
 /.dev_container/
+
+# Test Files
+/test_files/
+
+# jupyter
+/jupyter/
