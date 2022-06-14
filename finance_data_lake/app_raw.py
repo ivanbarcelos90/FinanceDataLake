@@ -5,8 +5,10 @@ import os
 from datetime import datetime
 import s3_class_file as s3
 
+pd.options.mode.chained_assignment = None  # default='warn'
 
 def run():
+    raw_bucket = 'finance-data-lake-raw'
     
     # Send Every Ticker Symbol to df
     # p = Path(os.path.abspath('./stock_list/stock_symbol.csv'))
@@ -19,12 +21,16 @@ def run():
     # tickerStrings = symbol['Symbol'] # All symbols
     # tickerStrings = tickerStrings.to_list()
 
-    f = import_daily_stock(tickerStrings, '1d','1d')  
-    
-    s3_upload_file(f, 'finance-data-lake-raw')
+    f = import_daily_stock(tickerStrings, '1d','1d')
+
+    print('Uploading file...')
+
+    s3.upload_file(f, raw_bucket, s3.create_s3_session()) 
+
+    os.remove(f)
 
     
-def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):
+def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):  
 
     print('Importing daily stock...')
     
@@ -40,8 +46,8 @@ def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):
 
     for ticker in tickerStrings:
         df_ticker = df[ticker]
-        df_ticker['ticker'] = ticker  
-        df_ticker['Event'] = datetime.now()    
+        df_ticker.loc[:,['ticker']] = ticker  
+        df_ticker.loc[:,['Event']] = datetime.now()    
         df_list.append(df_ticker)
         
     df_total = pd.concat(df_list).reset_index()
@@ -53,9 +59,4 @@ def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):
     print('The stock file was created succefully! \n')
 
     return full_path
-           
-def s3_upload_file(full_path, bucket):
-
-    print('Uploading file...')
-
-    s3.upload_file(full_path, bucket)    
+  

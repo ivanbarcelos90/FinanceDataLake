@@ -1,59 +1,52 @@
+from logging import exception
 import boto3
 from botocore.exceptions import ClientError
 import aws_access_keys as keys
+from datetime import datetime
 
 
 AWS_REGION = 'us-east-1'
 # AWS_PROFILE = 'localstack'
 ENDPOINT_URL = 'http://localstack:4566'
 
-# s3 client creation
-s3_client = boto3.client("s3"
+def create_s3_session(aws_region:str=AWS_REGION, endpoint_url:str=ENDPOINT_URL):
+
+    # s3 client creation
+    s3_client = boto3.client("s3"
+                            ,aws_access_key_id=keys.aws_access_key_id 
+                            ,aws_secret_access_key=keys.aws_secret_access_key
+                            ,region_name=aws_region
+                            ,endpoint_url=endpoint_url)
+
+    # Amazon S3 Resource
+    s3 = boto3.resource('s3'
                         ,aws_access_key_id=keys.aws_access_key_id 
                         ,aws_secret_access_key=keys.aws_secret_access_key
-                        ,region_name=AWS_REGION
-                        ,endpoint_url=ENDPOINT_URL)
+                        ,region_name=aws_region
+                        ,endpoint_url=endpoint_url)
 
-# Amazon S3 Resource
-s3 = boto3.resource('s3'
-                    ,aws_access_key_id=keys.aws_access_key_id 
-                    ,aws_secret_access_key=keys.aws_secret_access_key
-                    ,region_name=AWS_REGION
-                    ,endpoint_url=ENDPOINT_URL)
+    return {"client": s3_client, "resource": s3}
 
-
-
-# Print out bucket names
-def bucket_list():
-    for bucket in s3.buckets.all():
-        print(bucket.name)
-
-# Create bucket
-def create_bucket(bucket_name):
-    try:
-        response = s3_client.create_bucket(
-            Bucket=bucket_name)
-    except ClientError:
-        print('Could not create S3 bucket locally.')
-        raise
-    else:
-        return response
-
-# List files in a bucket
-def list_files(bucket):
-
-    my_bucket = s3.Bucket(bucket)
-
-    for my_bucket_object in my_bucket.objects.all():
-        print(my_bucket_object.key)
 
 # Upload a new file
-def upload_file(file, bucket):
+def upload_file(file:str, bucket:str, s3_dict:dict):
     data = open(file, 'rb')
-    s3.Bucket(bucket).put_object(Key=file, Body=data)
+    s3_dict["resource"].Bucket(bucket).put_object(Key=file, Body=data)
+
     return print(f'The file {file} was uploaded to the {bucket}')
 
-# Delete a file in a bucket 
-def delete_file(bucket, file):    
-    s3_client.delete_object(Bucket=bucket, Key=file)
-    return print(f'The file {file} was deleted from bucket {bucket}')
+# Read a file at s3
+def get_daily_file(bucket:str, folder:str, s3_dict:dict):
+
+    #Get the last from bucket
+    get_last_modified = lambda obj: int(obj['LastModified'].strftime('%s'))
+    try:
+        objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=datetime.now().strftime(f'{folder}year=%Y/month=%m/day=%d/'))['Contents']
+    except KeyError: 
+        return {}
+    else:    
+        last_added = [obj['Key'] for obj in sorted(objs, key=get_last_modified, reverse=True)][0]
+
+    return last_added  
+
+# Tentar acessar o bucket com o s3fs -> passar o host.

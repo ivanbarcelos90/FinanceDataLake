@@ -8,6 +8,8 @@ pytest = "*"
 pytest-cov = "*"
 yfinance = "*"
 boto3 = "*"
+fsspec = "*"
+s3fs = "*"
 
 [dev-packages]
 flake8 = "*"
