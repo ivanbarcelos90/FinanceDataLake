@@ -48,5 +48,3 @@ def get_daily_file(bucket:str, folder:str, s3_dict:dict):
         last_added = [obj['Key'] for obj in sorted(objs, key=get_last_modified, reverse=True)][0]
 
     return last_added  
-
-# Tentar acessar o bucket com o s3fs -> passar o host.

@@ -3,4 +3,4 @@ import app_cleanning
 
 if __name__ == '__main__':
     app_raw.run()
-    # app_cleanning.run()
+    app_cleanning.run()
