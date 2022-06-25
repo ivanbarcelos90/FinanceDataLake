@@ -9,11 +9,11 @@ folder = '/workspace/stock_data/'
 def run():
 
     c = cleanning_data(raw_bucket, s3.create_s3_session())
-
+  
     s3.upload_file(c, data_lake_bucket, s3.create_s3_session())
 
     os.remove(c)
-
+    
 
 def cleanning_data(bucket:str, s3_dict:dict):
 
@@ -32,9 +32,10 @@ def cleanning_data(bucket:str, s3_dict:dict):
     df_clean[["Date", "Event"]] = df_clean[["Date", "Event"]].apply(pd.to_datetime)
 
     print('Cleanning proccess completed succeffully! \n')   
-   
-    df_clean.to_csv(file_path, index=False) 
+    parquet_file_path = file_path[:-4] + '.parquet'
+
+    df_clean.to_parquet(parquet_file_path, index=False) 
 
     print('The csv stock file was created succefully! \n')
 
-    return file_path
+    return parquet_file_path

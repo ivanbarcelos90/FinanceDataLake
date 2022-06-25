@@ -30,8 +30,9 @@ def create_s3_session(aws_region:str=AWS_REGION, endpoint_url:str=ENDPOINT_URL):
 
 # Upload a new file
 def upload_file(file:str, bucket:str, s3_dict:dict):
-    data = open(file, 'rb')
-    s3_dict["resource"].Bucket(bucket).put_object(Key=file, Body=data)
+    data = open(file, 'rb') 
+    # TODO: Remover o "/workspace/" 
+    s3_dict["resource"].Bucket(bucket).put_object(Key=file, Body=data) 
 
     return print(f'The file {file} was uploaded to the {bucket}')
 
@@ -39,12 +40,9 @@ def upload_file(file:str, bucket:str, s3_dict:dict):
 def get_daily_file(bucket:str, folder:str, s3_dict:dict):
 
     #Get the last from bucket
-    get_last_modified = lambda obj: int(obj['LastModified'].strftime('%s'))
-    try:
-        objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=datetime.now().strftime(f'{folder}year=%Y/month=%m/day=%d/'))['Contents']
-    except KeyError: 
-        return {}
-    else:    
-        last_added = [obj['Key'] for obj in sorted(objs, key=get_last_modified, reverse=True)][0]
+    get_last_modified = lambda obj: int(obj['LastModified'].strftime('%s'))   
+    objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=datetime.now().strftime(f'{folder}year=%Y/month=%m/day=%d/')).get('Contents', {})    
+    last_added = [obj['Key'] for obj in sorted(objs, key=get_last_modified, reverse=True)][0]
 
     return last_added  
+

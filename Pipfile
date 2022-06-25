@@ -10,6 +10,8 @@ yfinance = "*"
 boto3 = "*"
 fsspec = "*"
 s3fs = "*"
+pyarrow = "*"
+pyspark = "*"
 
 [dev-packages]
 flake8 = "*"
