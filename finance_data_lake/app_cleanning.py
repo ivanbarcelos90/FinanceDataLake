@@ -4,7 +4,7 @@ import os, io
 
 raw_bucket = 'finance-data-lake-raw'
 data_lake_bucket = 'finance-data-lake'
-folder = '/workspace/stock_data/'
+folder = 'stock_data/'
 
 def run():
 
@@ -36,6 +36,6 @@ def cleanning_data(bucket:str, s3_dict:dict):
 
     df_clean.to_parquet(parquet_file_path, index=False) 
 
-    print('The csv stock file was created succefully! \n')
+    print(f'The csv stock file {parquet_file_path} was created succefully! \n')
 
     return parquet_file_path

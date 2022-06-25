@@ -1,5 +1,5 @@
 from logging import exception
-import boto3
+import boto3, re
 from botocore.exceptions import ClientError
 import aws_access_keys as keys
 from datetime import datetime
@@ -32,9 +32,10 @@ def create_s3_session(aws_region:str=AWS_REGION, endpoint_url:str=ENDPOINT_URL):
 def upload_file(file:str, bucket:str, s3_dict:dict):
     data = open(file, 'rb') 
     # TODO: Remover o "/workspace/" 
-    s3_dict["resource"].Bucket(bucket).put_object(Key=file, Body=data) 
+    data_lake_path = re.sub('/workspace/', '', file)
+    s3_dict["resource"].Bucket(bucket).put_object(Key=data_lake_path, Body=data) 
 
-    return print(f'The file {file} was uploaded to the {bucket}')
+    return print(f'The file {data_lake_path} was uploaded to the {bucket}')
 
 # Read a file at s3
 def get_daily_file(bucket:str, folder:str, s3_dict:dict):
