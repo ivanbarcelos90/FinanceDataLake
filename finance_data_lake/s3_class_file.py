@@ -1,8 +1,7 @@
-from logging import exception
-import boto3, re
-from botocore.exceptions import ClientError
+import boto3, re, io
 import aws_access_keys as keys
 from datetime import datetime
+import pandas as pd
 
 
 AWS_REGION = 'us-east-1'
@@ -37,7 +36,7 @@ def upload_file(file:str, bucket:str, s3_dict:dict):
 
     return print(f'The file {data_lake_path} was uploaded to the {bucket}')
 
-# Read a file at s3
+# Read the daily file at s3
 def get_daily_file(bucket:str, folder:str, s3_dict:dict):
 
     #Get the last from bucket
@@ -47,3 +46,10 @@ def get_daily_file(bucket:str, folder:str, s3_dict:dict):
 
     return last_added  
 
+# Read all the files in a bucket
+def get_all_files(bucket:str, folder:str, s3_dict:dict):
+
+    objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=folder)['Contents']  
+    keys = [obj['Key'] for obj in objs]
+            
+    return keys

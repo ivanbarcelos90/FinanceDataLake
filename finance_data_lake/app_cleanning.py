@@ -2,17 +2,17 @@ import pandas as pd
 import s3_class_file as s3
 import os, io
 
-raw_bucket = 'finance-data-lake-raw'
-data_lake_bucket = 'finance-data-lake'
+bronze_bucket = 'finance-data-lake-bronze'
+silver_bucket = 'finance-data-lake-silver'
 folder = 'stock_data/'
 
 def run():
 
-    c = cleanning_data(raw_bucket, s3.create_s3_session())
+    cleanned_data = cleanning_data(bronze_bucket, s3.create_s3_session())
   
-    s3.upload_file(c, data_lake_bucket, s3.create_s3_session())
+    s3.upload_file(cleanned_data, silver_bucket, s3.create_s3_session())
 
-    os.remove(c)
+    os.remove(cleanned_data)
     
 
 def cleanning_data(bucket:str, s3_dict:dict):
@@ -36,6 +36,6 @@ def cleanning_data(bucket:str, s3_dict:dict):
 
     df_clean.to_parquet(parquet_file_path, index=False) 
 
-    print(f'The csv stock file {parquet_file_path} was created succefully! \n')
+    print(f'The parquet stock file {parquet_file_path} was created succefully! \n')
 
     return parquet_file_path

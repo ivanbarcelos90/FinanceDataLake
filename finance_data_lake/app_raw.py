@@ -8,7 +8,7 @@ import s3_class_file as s3
 pd.options.mode.chained_assignment = None  # default='warn'
 
 def run():
-    raw_bucket = 'finance-data-lake-raw'
+    bronze_bucket = 'finance-data-lake-bronze'
     
     # Send Every Ticker Symbol to df
     # p = Path(os.path.abspath('./stock_list/stock_symbol.csv'))
@@ -21,13 +21,13 @@ def run():
     # tickerStrings = symbol['Symbol'] # All symbols
     # tickerStrings = tickerStrings.to_list()
 
-    f = import_daily_stock(tickerStrings, '1d','1d')
+    raw_data = import_daily_stock(tickerStrings, '1d','1d')
 
     print('Uploading file...')
 
-    s3.upload_file(f, raw_bucket, s3.create_s3_session()) 
+    s3.upload_file(raw_data, bronze_bucket, s3.create_s3_session()) 
 
-    os.remove(f)
+    os.remove(raw_data)
 
     
 def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):  
