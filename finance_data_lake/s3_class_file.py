@@ -30,7 +30,6 @@ def create_s3_session(aws_region:str=AWS_REGION, endpoint_url:str=ENDPOINT_URL):
 # Upload a new file
 def upload_file(file:str, bucket:str, s3_dict:dict):
     data = open(file, 'rb') 
-    # TODO: Remover o "/workspace/" 
     data_lake_path = re.sub('/workspace/', '', file)
     s3_dict["resource"].Bucket(bucket).put_object(Key=data_lake_path, Body=data) 
 
