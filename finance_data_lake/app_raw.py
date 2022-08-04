@@ -11,15 +11,15 @@ def run():
     bronze_bucket = 'finance-data-lake-bronze'
     
     # Send Every Ticker Symbol to df
-    # p = Path(os.path.abspath('./stock_list/stock_symbol.csv'))
+    p = Path(os.path.abspath('./stock_list/stock_symbol.csv'))
     
     # Create a dataframe to store all stocks symbols
-    # symbol = pd.read_csv(p, nrows=8188) # nrows got 8188 symbols
+    symbol = pd.read_csv(p, nrows=8188) # nrows got 8188 symbols
 
     # Parameters to iterate all tickers a store all data in separate csv.
-    tickerStrings = ['AAPL','MSFT','TWTR','F','BBD','ITUB','VALE','NVDA','T','PBR','FB','TSLA','PFE','GM','INTC','UBER','KO','HPQ','DIS','CIG'] # Test symbol
-    # tickerStrings = symbol['Symbol'] # All symbols
-    # tickerStrings = tickerStrings.to_list()
+    # tickerStrings = ['AAPL','MSFT','TWTR','F','BBD','ITUB','VALE','NVDA','T','PBR','FB','TSLA','PFE','GM','INTC','UBER','KO','HPQ','DIS','CIG'] # Test symbol
+    tickerStrings = symbol['Symbol'] # All symbols
+    tickerStrings = tickerStrings.to_list()
 
     raw_data = import_daily_stock(tickerStrings, '1d','1d')
 

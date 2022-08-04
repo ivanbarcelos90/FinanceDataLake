@@ -12,7 +12,7 @@ def run():
   
     s3.upload_file(cleanned_data, silver_bucket, s3.create_s3_session())
 
-    os.remove(cleanned_data)
+    # os.remove(cleanned_data)
     
 
 def cleanning_data(bucket:str, s3_dict:dict):
@@ -34,7 +34,7 @@ def cleanning_data(bucket:str, s3_dict:dict):
     print('Cleanning proccess completed succeffully! \n')   
     parquet_file_path = file_path[:-4] + '.parquet'
 
-    df_clean.to_parquet(parquet_file_path, index=False) 
+    df_clean.to_parquet(parquet_file_path, index=False, compression="gzip") 
 
     print(f'The parquet stock file {parquet_file_path} was created succefully! \n')
 
