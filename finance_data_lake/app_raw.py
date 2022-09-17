@@ -21,7 +21,7 @@ def run():
     tickerStrings = symbol['Symbol'] # All symbols
     tickerStrings = tickerStrings.to_list()
 
-    raw_data = import_daily_stock(tickerStrings, '1d','1d')
+    raw_data = import_daily_stock(tickerStrings, '1mo','1d')
 
     print('Uploading file...')
 
@@ -38,7 +38,7 @@ def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):
     df = yf.download(tickers=tickerStrings, group_by="Ticker", period=prd, interval=intv, threads=True)
 
     path = os.path.abspath(f'./stock_data/year={datetime.now().strftime("%Y")}/month={datetime.now().strftime("%m")}/day={datetime.now().strftime("%d")}')
-    file_name = f'{datetime.now().strftime("%Y_%m_%d_%H%M%S")}_stock_all.csv'
+    file_name = f'{datetime.now().strftime("%Y_%m_%d_%H%M%S")}_stock_all.parquet'
 
     full_path = path + '/' + file_name
 
@@ -52,9 +52,9 @@ def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):
         
     df_total = pd.concat(df_list).reset_index()
 
-    print('Creating csv file... \n')
-
-    df_total.to_csv(full_path, index=False)  
+    print('Creating parquet file... \n')
+ 
+    df_total.to_parquet(full_path, index=False, compression="gzip") 
 
     print('The stock file was created succefully! \n')
 

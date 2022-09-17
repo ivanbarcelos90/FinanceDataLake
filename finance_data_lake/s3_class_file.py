@@ -39,11 +39,13 @@ def upload_file(file:str, bucket:str, s3_dict:dict):
 def get_daily_file(bucket:str, folder:str, s3_dict:dict):
 
     #Get the last from bucket
-    get_last_modified = lambda obj: int(obj['LastModified'].strftime('%s'))   
-    objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=datetime.now().strftime(f'{folder}year=%Y/month=%m/day=%d/')).get('Contents', {})    
-    last_added = [obj['Key'] for obj in sorted(objs, key=get_last_modified, reverse=True)][0]
+    get_last_modified = lambda obj: int(obj['LastModified'].strftime('%s'))         
+    objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=datetime.now().strftime(f'{folder}year=%Y/month=%m/day=%d/')).get('Contents', {}) 
 
-    return last_added  
+    if len(objs) > 0:
+        return [obj['Key'] for obj in sorted(objs, key=get_last_modified, reverse=True)][0]
+
+    return None       
 
 # Read all the files in a bucket
 def get_all_files(bucket:str, folder:str, s3_dict:dict):

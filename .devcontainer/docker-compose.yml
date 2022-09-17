@@ -13,14 +13,16 @@ services:
     networks:
       - "local"
   localstack:
-    image: localstack/localstack:latest
+    image: localstack/localstack:0.14.5
     ports:
       - "4566:4566"
       - "4571:4571"
     environment:
       - DATA_DIR=/tmp/localstack/data
+      # - PERSISTENCE=1
     volumes:
     - ../.cache/localstack:/tmp/localstack
+      # - ../.cache/localstack:/var/lib/localstack
     networks:
       - "local"
   dynamoDb-admin:
