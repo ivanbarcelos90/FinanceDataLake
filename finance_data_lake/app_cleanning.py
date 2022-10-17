@@ -11,7 +11,7 @@ folder = 'stock_data/'
 
 def run():
 
-    cleanning_data(bronze_bucket, s3.create_s3_session())
+    cleanning_data(bronze_bucket)
   
     # s3.upload_file(cleanned_data, silver_bucket, s3.create_s3_session())
 
@@ -19,7 +19,7 @@ def run():
     
 # Spark Method
 
-def cleanning_data(bucket:str, s3_dict:dict):
+def cleanning_data(bucket:str):
 
     print('Download object from s3 bucket... \n')
 
@@ -40,14 +40,19 @@ def cleanning_data(bucket:str, s3_dict:dict):
                               .withColumn('month', month('Date'))
                               .withColumn('day', dayofmonth('Date'))) 
 
-        stock_data_df = spark.read.parquet(parquet_file_path).select('year', 'month', 'day').distinct()
-        df_clean_3 = df_clean_2.join(stock_data_df, ['year', 'month', 'day'], 'leftanti')
+        if parquet_file_path := s3.get_daily_file(silver_bucket, folder, s3.create_s3_session()):
+            stock_data_df = spark.read.parquet(parquet_file_path).select('year', 'month', 'day').distinct()
+            df_clean_3 = df_clean_2.join(stock_data_df, ['year', 'month', 'day'], 'leftanti')
+
+        else:
+            df_clean_3 = df_clean_2
+            parquet_file_path = f's3a://{silver_bucket}/stock_data/'
 
         columns = [x.lower() for x in df_clean_3.columns]
 
         (df_clean_3.toDF(*columns)
-                   .write
-                   .parquet(parquet_file_path,
+                .write
+                .parquet(parquet_file_path,
                             mode='append',
                             partitionBy=['year', 'month', 'day'],
                             compression='gzip')) 

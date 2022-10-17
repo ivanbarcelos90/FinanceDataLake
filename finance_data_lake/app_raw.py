@@ -21,7 +21,7 @@ def run():
     tickerStrings = symbol['Symbol'] # All symbols
     tickerStrings = tickerStrings.to_list()
 
-    raw_data = import_daily_stock(tickerStrings, '1mo','1d')
+    raw_data = import_daily_stock(tickerStrings, '1d','1d')
 
     print('Uploading file...')
 

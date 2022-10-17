@@ -38,7 +38,7 @@ def upload_file(file:str, bucket:str, s3_dict:dict):
 # Read the daily file at s3
 def get_daily_file(bucket:str, folder:str, s3_dict:dict):
 
-    #Get the last from bucket
+    #Get the last file from a bucket
     get_last_modified = lambda obj: int(obj['LastModified'].strftime('%s'))         
     objs = s3_dict["client"].list_objects_v2(Bucket=bucket, Prefix=datetime.now().strftime(f'{folder}year=%Y/month=%m/day=%d/')).get('Contents', {}) 
 
