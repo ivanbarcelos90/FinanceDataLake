@@ -12,6 +12,7 @@ fsspec = "*"
 s3fs = "*"
 pyarrow = "*"
 pyspark = "*"
+apache-airflow = "*"
 
 [dev-packages]
 flake8 = "*"

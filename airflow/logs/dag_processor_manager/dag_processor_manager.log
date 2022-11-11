@@ -1,0 +1,820 @@
+[2022-10-31T22:44:20.752+0000] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2022-10-31T22:44:20.753+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2022-10-31T22:44:20.754+0000] {manager.py:485} INFO - Checking for new files in /workspace/airflow/dags every 300 seconds
+[2022-10-31T22:44:20.755+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T22:44:20.763+0000] {manager.py:727} INFO - There are 36 files in /workspace/airflow/dags
+[2022-10-31T22:44:21.240+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.40s           2022-10-31T22:44:21
+================================================================================
+[2022-10-31T22:44:51.572+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.20s           2022-10-31T22:44:25
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.20s           2022-10-31T22:44:47
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.40s           2022-10-31T22:44:21
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.50s           2022-10-31T22:44:22
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.40s           2022-10-31T22:44:24
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  1           0  0.40s           2022-10-31T22:44:26
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.40s           2022-10-31T22:44:27
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.40s           2022-10-31T22:44:29
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.40s           2022-10-31T22:44:31
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.40s           2022-10-31T22:44:33
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.40s           2022-10-31T22:44:34
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      1           0  0.40s           2022-10-31T22:44:36
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   1           0  0.40s           2022-10-31T22:44:37
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             1           0  0.40s           2022-10-31T22:44:38
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.40s           2022-10-31T22:44:40
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.40s           2022-10-31T22:44:41
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.40s           2022-10-31T22:44:42
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.40s           2022-10-31T22:44:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.40s           2022-10-31T22:44:45
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.40s           2022-10-31T22:44:46
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.40s           2022-10-31T22:44:49
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.40s           2022-10-31T22:44:50
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.40s           2022-10-31T22:44:51
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.80s           2022-10-31T22:44:30
+================================================================================
+[2022-10-31T22:45:22.220+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.10s           2022-10-31T22:45:11
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.20s           2022-10-31T22:44:47
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.20s           2022-10-31T22:44:57
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.20s           2022-10-31T22:44:58
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.20s           2022-10-31T22:45:08
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.20s           2022-10-31T22:45:08
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.20s           2022-10-31T22:45:09
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  1           0  0.20s           2022-10-31T22:45:12
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.40s           2022-10-31T22:44:59
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.41s           2022-10-31T22:45:01
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2022-10-31T22:45:13
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2022-10-31T22:45:13
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.20s           2022-10-31T22:45:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.20s           2022-10-31T22:45:17
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.20s           2022-10-31T22:45:19
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      1           0  0.20s           2022-10-31T22:45:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   1           0  0.20s           2022-10-31T22:45:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.30s           2022-10-31T22:45:02
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             1           0  0.20s           2022-10-31T22:45:22
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.40s           2022-10-31T22:44:40
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.40s           2022-10-31T22:44:41
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.40s           2022-10-31T22:44:42
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.30s           2022-10-31T22:45:03
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.40s           2022-10-31T22:44:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.40s           2022-10-31T22:44:45
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.30s           2022-10-31T22:45:04
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.40s           2022-10-31T22:44:46
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.30s           2022-10-31T22:45:06
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.40s           2022-10-31T22:44:49
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.40s           2022-10-31T22:44:50
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.40s           2022-10-31T22:44:51
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.50s           2022-10-31T22:44:54
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.50s           2022-10-31T22:44:56
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  3           0  0.50s           2022-10-31T22:45:06
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.40s           2022-10-31T22:44:53
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.20s           2022-10-31T22:45:15
+================================================================================
+[2022-10-31T22:45:52.602+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.10s           2022-10-31T22:45:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.10s           2022-10-31T22:45:29
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2022-10-31T22:45:36
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.10s           2022-10-31T22:45:37
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.20s           2022-10-31T22:45:41
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.20s           2022-10-31T22:45:42
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.20s           2022-10-31T22:45:43
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  1           0  0.20s           2022-10-31T22:45:50
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.20s           2022-10-31T22:45:38
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.20s           2022-10-31T22:45:39
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2022-10-31T22:45:51
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2022-10-31T22:45:52
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.20s           2022-10-31T22:45:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.20s           2022-10-31T22:45:17
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.20s           2022-10-31T22:45:19
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      1           0  0.20s           2022-10-31T22:45:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   1           0  0.20s           2022-10-31T22:45:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.20s           2022-10-31T22:45:40
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             1           0  0.20s           2022-10-31T22:45:22
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.20s           2022-10-31T22:45:22
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.20s           2022-10-31T22:45:23
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.20s           2022-10-31T22:45:24
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.20s           2022-10-31T22:45:45
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.20s           2022-10-31T22:45:25
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.20s           2022-10-31T22:45:26
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.20s           2022-10-31T22:45:46
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.20s           2022-10-31T22:45:28
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.20s           2022-10-31T22:45:49
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.20s           2022-10-31T22:45:29
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.20s           2022-10-31T22:45:30
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.20s           2022-10-31T22:45:32
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.20s           2022-10-31T22:45:34
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.20s           2022-10-31T22:45:34
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  3           0  0.20s           2022-10-31T22:45:48
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.30s           2022-10-31T22:45:32
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.20s           2022-10-31T22:45:15
+================================================================================
+[2022-10-31T22:46:23.166+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.10s           2022-10-31T22:45:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.10s           2022-10-31T22:46:09
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2022-10-31T22:46:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.10s           2022-10-31T22:46:17
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.21s           2022-10-31T22:46:21
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.20s           2022-10-31T22:46:21
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.20s           2022-10-31T22:46:23
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  1           0  0.20s           2022-10-31T22:45:50
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.20s           2022-10-31T22:46:19
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.20s           2022-10-31T22:46:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2022-10-31T22:45:51
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2022-10-31T22:45:52
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.20s           2022-10-31T22:45:54
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.20s           2022-10-31T22:45:55
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.20s           2022-10-31T22:45:57
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      1           0  0.20s           2022-10-31T22:45:58
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   1           0  0.20s           2022-10-31T22:45:59
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.20s           2022-10-31T22:45:40
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             1           0  0.20s           2022-10-31T22:46:01
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.20s           2022-10-31T22:46:02
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.20s           2022-10-31T22:46:03
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.20s           2022-10-31T22:46:04
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.20s           2022-10-31T22:45:45
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.20s           2022-10-31T22:46:06
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.20s           2022-10-31T22:46:07
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.20s           2022-10-31T22:45:46
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.20s           2022-10-31T22:46:07
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.20s           2022-10-31T22:45:49
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.20s           2022-10-31T22:46:10
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.20s           2022-10-31T22:46:11
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.20s           2022-10-31T22:46:12
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.20s           2022-10-31T22:46:15
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.20s           2022-10-31T22:46:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  3           0  0.20s           2022-10-31T22:45:48
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.20s           2022-10-31T22:46:13
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.20s           2022-10-31T22:45:53
+================================================================================
+[2022-10-31T22:46:53.702+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.10s           2022-10-31T22:46:24
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.10s           2022-10-31T22:46:48
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2022-10-31T22:46:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.10s           2022-10-31T22:46:17
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.20s           2022-10-31T22:46:51
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.20s           2022-10-31T22:46:21
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.20s           2022-10-31T22:46:23
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  1           0  0.20s           2022-10-31T22:46:25
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.20s           2022-10-31T22:46:19
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.20s           2022-10-31T22:46:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2022-10-31T22:46:32
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2022-10-31T22:46:33
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.20s           2022-10-31T22:46:35
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.24s           2022-10-31T22:46:36
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.20s           2022-10-31T22:46:37
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      1           0  0.20s           2022-10-31T22:46:38
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   1           0  0.20s           2022-10-31T22:46:39
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.20s           2022-10-31T22:46:26
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             1           0  0.20s           2022-10-31T22:46:40
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.20s           2022-10-31T22:46:42
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.20s           2022-10-31T22:46:42
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.20s           2022-10-31T22:46:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.20s           2022-10-31T22:46:27
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.20s           2022-10-31T22:46:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.20s           2022-10-31T22:46:45
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.20s           2022-10-31T22:46:28
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.20s           2022-10-31T22:46:47
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.20s           2022-10-31T22:46:30
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.20s           2022-10-31T22:46:49
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.20s           2022-10-31T22:46:50
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.20s           2022-10-31T22:46:53
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.20s           2022-10-31T22:46:15
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.20s           2022-10-31T22:46:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  3           0  0.20s           2022-10-31T22:46:29
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.20s           2022-10-31T22:46:53
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.20s           2022-10-31T22:46:34
+================================================================================
+[2022-10-31T22:47:24.017+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.10s           2022-10-31T22:47:04
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.10s           2022-10-31T22:46:48
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2022-10-31T22:46:57
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.10s           2022-10-31T22:46:58
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.20s           2022-10-31T22:47:24
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.20s           2022-10-31T22:47:02
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.20s           2022-10-31T22:47:03
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                  1           0  0.20s           2022-10-31T22:47:05
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.20s           2022-10-31T22:46:59
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.20s           2022-10-31T22:47:00
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2022-10-31T22:47:12
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2022-10-31T22:47:13
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.20s           2022-10-31T22:47:15
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.20s           2022-10-31T22:47:16
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.20s           2022-10-31T22:47:17
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                      1           0  0.20s           2022-10-31T22:47:19
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                   1           0  0.20s           2022-10-31T22:47:20
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.20s           2022-10-31T22:47:06
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                             1           0  0.20s           2022-10-31T22:47:21
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.20s           2022-10-31T22:47:22
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.20s           2022-10-31T22:46:42
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.20s           2022-10-31T22:46:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.20s           2022-10-31T22:47:07
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.20s           2022-10-31T22:46:44
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.20s           2022-10-31T22:46:45
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.20s           2022-10-31T22:47:08
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.20s           2022-10-31T22:46:47
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.20s           2022-10-31T22:47:11
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.20s           2022-10-31T22:46:49
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.20s           2022-10-31T22:46:50
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.20s           2022-10-31T22:46:53
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.20s           2022-10-31T22:46:54
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.20s           2022-10-31T22:46:56
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  3           0  0.20s           2022-10-31T22:47:10
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.20s           2022-10-31T22:46:53
+/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.20s           2022-10-31T22:47:15
+================================================================================
+[2022-10-31T22:47:55.012+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2022-10-31T22:48:01.760+0000] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2022-10-31T22:48:01.760+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2022-10-31T22:48:01.761+0000] {manager.py:485} INFO - Checking for new files in /workspace/airflow/dags every 300 seconds
+[2022-10-31T22:48:01.762+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T22:48:01.766+0000] {manager.py:727} INFO - There are 0 files in /workspace/airflow/dags
+[2022-10-31T22:53:01.789+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T22:53:01.795+0000] {manager.py:727} INFO - There are 0 files in /workspace/airflow/dags
+[2022-10-31T22:55:28.862+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2022-10-31T22:55:37.696+0000] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2022-10-31T22:55:37.697+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2022-10-31T22:55:37.698+0000] {manager.py:485} INFO - Checking for new files in /workspace/airflow/dags every 300 seconds
+[2022-10-31T22:55:37.698+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T22:55:37.709+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T22:55:38.083+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.30s           2022-10-31T22:55:38
+================================================================================
+[2022-10-31T22:56:08.427+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T22:56:08
+================================================================================
+[2022-10-31T22:56:39.256+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:56:39
+================================================================================
+[2022-10-31T22:57:09.628+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:57:09
+================================================================================
+[2022-10-31T22:57:39.850+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:57:39
+================================================================================
+[2022-10-31T22:58:10.990+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:58:10
+================================================================================
+[2022-10-31T22:58:41.245+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:58:41
+================================================================================
+[2022-10-31T22:59:12.345+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:59:12
+================================================================================
+[2022-10-31T22:59:42.661+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T22:59:42
+================================================================================
+[2022-10-31T23:00:13.652+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:00:13
+================================================================================
+[2022-10-31T23:00:37.723+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T23:00:37.731+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T23:00:44.068+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:00:44
+================================================================================
+[2022-10-31T23:01:14.879+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:01:14
+================================================================================
+[2022-10-31T23:01:45.598+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:01:45
+================================================================================
+[2022-10-31T23:02:16.331+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:02:16
+================================================================================
+[2022-10-31T23:02:47.050+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:02:47
+================================================================================
+[2022-10-31T23:03:17.762+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:03:17
+================================================================================
+[2022-10-31T23:03:48.485+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:03:48
+================================================================================
+[2022-10-31T23:04:19.189+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:04:19
+================================================================================
+[2022-10-31T23:04:49.911+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:04:49
+================================================================================
+[2022-10-31T23:05:20.625+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:05:20
+================================================================================
+[2022-10-31T23:05:37.830+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T23:05:37.838+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T23:05:51.349+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:05:51
+================================================================================
+[2022-10-31T23:06:21.878+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:06:21
+================================================================================
+[2022-10-31T23:06:52.318+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:06:52
+================================================================================
+[2022-10-31T23:07:22.711+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:07:22
+================================================================================
+[2022-10-31T23:07:53.103+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:07:53
+================================================================================
+[2022-10-31T23:08:23.391+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:08:23
+================================================================================
+[2022-10-31T23:08:53.789+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:08:53
+================================================================================
+[2022-10-31T23:09:24.194+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:09:24
+================================================================================
+[2022-10-31T23:09:54.403+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:09:42
+================================================================================
+[2022-10-31T23:10:24.591+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:09:59
+================================================================================
+[2022-10-31T23:10:37.933+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T23:10:37.943+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T23:10:54.724+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:10:30
+================================================================================
+[2022-10-31T23:11:24.938+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:11:00
+================================================================================
+[2022-10-31T23:11:55.135+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:11:32
+================================================================================
+[2022-10-31T23:12:25.272+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:12:02
+================================================================================
+[2022-10-31T23:12:55.588+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:12:50
+================================================================================
+[2022-10-31T23:13:25.785+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:13:20
+================================================================================
+[2022-10-31T23:13:55.879+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:13:51
+================================================================================
+[2022-10-31T23:14:26.143+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:14:21
+================================================================================
+[2022-10-31T23:14:56.338+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:14:51
+================================================================================
+[2022-10-31T23:15:26.521+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:15:22
+================================================================================
+[2022-10-31T23:15:38.063+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T23:15:38.071+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T23:15:56.662+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:15:52
+================================================================================
+[2022-10-31T23:16:26.869+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:16:23
+================================================================================
+[2022-10-31T23:16:57.034+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:16:53
+================================================================================
+[2022-10-31T23:17:27.160+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:17:24
+================================================================================
+[2022-10-31T23:17:57.351+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:17:54
+================================================================================
+[2022-10-31T23:18:27.537+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:18:25
+================================================================================
+[2022-10-31T23:18:57.723+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:18:55
+================================================================================
+[2022-10-31T23:19:27.920+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:19:26
+================================================================================
+[2022-10-31T23:19:58.028+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:19:56
+================================================================================
+[2022-10-31T23:20:28.303+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:20:27
+================================================================================
+[2022-10-31T23:20:38.195+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T23:20:38.202+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T23:20:58.491+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:20:57
+================================================================================
+[2022-10-31T23:21:28.501+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.21s           2022-10-31T23:21:28
+================================================================================
+[2022-10-31T23:21:58.988+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:21:58
+================================================================================
+[2022-10-31T23:22:29.400+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:22:29
+================================================================================
+[2022-10-31T23:22:59.791+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:22:59
+================================================================================
+[2022-10-31T23:23:30.197+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:23:30
+================================================================================
+[2022-10-31T23:24:00.590+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:24:00
+================================================================================
+[2022-10-31T23:24:30.984+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:24:30
+================================================================================
+[2022-10-31T23:25:01.387+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:25:01
+================================================================================
+[2022-10-31T23:25:31.797+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:25:31
+================================================================================
+[2022-10-31T23:25:38.296+0000] {manager.py:724} INFO - Searching for files in /workspace/airflow/dags
+[2022-10-31T23:25:38.304+0000] {manager.py:727} INFO - There are 1 files in /workspace/airflow/dags
+[2022-10-31T23:26:02.182+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/workspace/airflow/dags/tutorial.py                           1           0  0.20s           2022-10-31T23:26:02
+================================================================================

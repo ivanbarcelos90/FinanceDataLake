@@ -25,7 +25,7 @@ def gold_data(bucket:str, silver_folder:str, gold_folder):
     print('Creating source Dataframe from cleanned data!')
 
 
-    df = spark.read.parquet('s3a://' + bucket + '/' + silver_folder)  
+    df = spark.read.parquet('s3a://' + bucket + '/' + silver_folder + '/')  
 
 
     print('Dataframe created succefully from s3 object! \n')
