@@ -1,15 +1,10 @@
 
-from pathlib import Path
-import sys, os
 from datetime import datetime, timedelta
 from textwrap import dedent
+import app_raw  
+import app_cleanning
+import app_gold
 
-
-posix_path = Path(__file__).parents[2].absolute()
-app_path = os.path.join(str(posix_path), 'finance_data_lake')
-sys.path.insert(0, app_path)
-
-import app_raw
 
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
@@ -43,7 +38,7 @@ with DAG(
     },
     description='Finance Data Lake Job',
     schedule=timedelta(days=1),
-    start_date=datetime(2022, 11, 4),
+    start_date=datetime(2022, 11, 12),
     catchup=False,
     tags=['Finance Data Lake'],
 ) as dag:
@@ -61,23 +56,6 @@ with DAG(
     t3 = PythonOperator(
         task_id='gold_zone',
         python_callable = app_gold.run
-    )
-    
-    t1.doc_md = dedent(
-        """
-    #### Task Documentation
-    A working job to run the Finance Data Lake
-    """
-    )
-
-    dag.doc_md = __doc__  # providing that you have a docstring at the beginning of the DAG; OR
-    dag.doc_md = """
-    This is a documentation placed anywhere
-    """  # otherwise, type it like this
-    templated_command = dedent(
-    """
-    A working job to run the Finance Data Lake  
-    """
-    )
+    )   
 
     t1 >> t2 >> t3
