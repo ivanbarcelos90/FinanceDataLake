@@ -1,0 +1,37 @@
+# TODO: Para finalizar
+## 1. Criar job que criem os buckets:
+    * Precisa usar variavel do airflow no nome do bucket - done
+## 2. Refatorar o code para usar o nome do bucket (variable)
+    * Criar arquivo .py chamado constants - done
+    * Olhar o padrao do python para constantes - done
+## 3. Verificar como usar parâmetros no airflow
+## 4. Criar docker-compose que suba o projeto no estado atual
+## 5. Conceitos de Logs
+## 6. Refatoração de code e testes unitários
+## 7. Iniciar o Airflow sem iniciar os jobs
+
+
+
+## NEW TODO
+
+<!-- O que é Kubernetes -->
+# https://www.youtube.com/@LinuxTips/search
+# Instalar o Kubernetes
+
+# Procurar saber sobre o Helm
+# Instalar Helm
+# https://dev.to/murilommen/deploy-do-airflow-2-0-no-kubernetes-com-helm-1a96
+
+# Procurar saber sobre o Kurbenetes Lens
+# https://k8slens.dev/
+
+
+## Instalar Kind
+# Procurar saber sobre o Kind
+# https://kind.sigs.k8s.io/
+# Instalar o Kind com powershell
+
+
+<!-- Colocar o Airflow no Kubernetes -->
+# https://airflow.apache.org/docs/helm-chart/stable/index.html
+

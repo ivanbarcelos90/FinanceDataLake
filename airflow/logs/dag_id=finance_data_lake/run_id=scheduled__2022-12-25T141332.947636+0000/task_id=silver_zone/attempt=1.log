@@ -1,0 +1,28 @@
+[2022-12-26T14:23:09.775+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.silver_zone scheduled__2022-12-25T14:13:32.947636+00:00 [queued]>
+[2022-12-26T14:23:09.785+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.silver_zone scheduled__2022-12-25T14:13:32.947636+00:00 [queued]>
+[2022-12-26T14:23:09.785+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T14:23:09.785+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-26T14:23:09.785+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T14:23:09.805+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): silver_zone> on 2022-12-25 14:13:32.947636+00:00
+[2022-12-26T14:23:09.810+0000] {standard_task_runner.py:55} INFO - Started process 26665 to run task
+[2022-12-26T14:23:09.812+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'finance_data_lake', 'silver_zone', 'scheduled__2022-12-25T14:13:32.947636+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/job_finance_data_lake.py', '--cfg-path', '/tmp/tmpl9b4v8lj']
+[2022-12-26T14:23:09.813+0000] {standard_task_runner.py:83} INFO - Job 60: Subtask silver_zone
+[2022-12-26T14:23:09.873+0000] {task_command.py:376} INFO - Running <TaskInstance: finance_data_lake.silver_zone scheduled__2022-12-25T14:13:32.947636+00:00 [running]> on host 92923f118f93
+[2022-12-26T14:23:09.952+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=finance_data_lake
+AIRFLOW_CTX_TASK_ID=silver_zone
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-25T14:13:32.947636+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-25T14:13:32.947636+00:00
+[2022-12-26T14:23:09.953+0000] {logging_mixin.py:137} INFO - Download object from s3 bucket...
+[2022-12-26T14:23:23.223+0000] {logging_mixin.py:137} INFO - Dataframe created succefully from s3 object!
+[2022-12-26T14:23:23.224+0000] {logging_mixin.py:137} INFO - Starting cleanning proccess...
+[2022-12-26T14:23:23.283+0000] {logging_mixin.py:137} INFO - Cleanning proccess completed succeffully!
+[2022-12-26T14:23:29.809+0000] {logging_mixin.py:137} INFO - The parquet stock file s3a://finance-data-lake-silver/stock_data/ was created succefully!
+[2022-12-26T14:23:29.810+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-26T14:23:29.821+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=finance_data_lake, task_id=silver_zone, execution_date=20221225T141332, start_date=20221226T142309, end_date=20221226T142329
+[2022-12-26T14:23:29.875+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-26T14:23:29.896+0000] {taskinstance.py:2623} INFO - 1 downstream tasks scheduled from follow-on schedule check

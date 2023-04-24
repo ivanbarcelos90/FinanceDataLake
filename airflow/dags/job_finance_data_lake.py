@@ -1,10 +1,5 @@
-
 from datetime import datetime, timedelta
-from textwrap import dedent
-import app_raw  
-import app_cleanning
-import app_gold
-
+import app_raw, app_cleanning, app_gold, create_bucket, constants
 
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
@@ -43,6 +38,11 @@ with DAG(
     tags=['Finance Data Lake'],
 ) as dag:
 
+    b1 = PythonOperator(
+        task_id='create_bucket',
+        python_callable = create_bucket.run
+    )
+
     t1 = PythonOperator(
         task_id='bronze_zone',
         python_callable = app_raw.run
@@ -58,4 +58,5 @@ with DAG(
         python_callable = app_gold.run
     )   
 
-    t1 >> t2 >> t3
+    b1 >> t1 >> t2 >> t3
+    

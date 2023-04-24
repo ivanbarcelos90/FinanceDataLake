@@ -54,3 +54,7 @@ def get_all_files(bucket:str, folder:str, s3_dict:dict):
     keys = [obj['Key'] for obj in objs]
             
     return keys
+
+def create_bucket(bucket:str, s3_dict:dict):
+    
+    return s3_dict["client"].create_bucket(Bucket=bucket)

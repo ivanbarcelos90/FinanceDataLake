@@ -1,14 +1,17 @@
 import yfinance as yf
 import pandas as pd
-from pathlib import Path
-import os 
-from datetime import datetime
 import s3_class_file as s3
+import os 
+from pathlib import Path
+from datetime import datetime
+# from airflow.models import Variable
+from constants import BRONZE_ZONE, INTERVAL, PERIOD
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
 def run():
-    bronze_bucket = 'finance-data-lake-bronze'
+    bronze_bucket = BRONZE_ZONE
+    # bronze_bucket = 'finance-data-lake-bronze'
     
     # Send Every Ticker Symbol to df
     p = Path(os.path.abspath('./stock_list/stock_symbol.csv'))
@@ -21,7 +24,7 @@ def run():
     tickerStrings = symbol['Symbol'] # All symbols
     tickerStrings = tickerStrings.to_list()
 
-    raw_data = import_daily_stock(tickerStrings, '1mo','1d')
+    raw_data = import_daily_stock(tickerStrings, PERIOD, INTERVAL)
 
     print('Uploading file...')
 
@@ -30,7 +33,7 @@ def run():
     os.remove(raw_data)
 
     
-def import_daily_stock(tickerStrings:list(), prd:str='1d', intv:str='1d'):  
+def import_daily_stock(tickerStrings:list(), prd:str='1mo', intv:str='1d'):  
 
     print('Importing daily stock...')
     

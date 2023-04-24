@@ -1,13 +1,17 @@
-from optparse import Option
+
 import pandas as pd 
 import s3_class_file as s3
 import os, io
+from optparse import Option
 from spark_class_file import spark_session
 from pyspark.sql.functions import year, month, dayofmonth 
+from airflow.models import Variable
+from constants import BRONZE_ZONE, SILVER_ZONE
 
-bronze_bucket = 'finance-data-lake-bronze'
-silver_bucket = 'finance-data-lake-silver'
+bronze_bucket = BRONZE_ZONE
+silver_bucket = SILVER_ZONE
 folder = 'stock_data/'
+
 
 def run():
 
@@ -25,7 +29,7 @@ def cleanning_data(bucket:str):
 
     if file_path := s3.get_daily_file(bucket, folder, s3.create_s3_session()):
         spark = spark_session()
-        stock_data_df = spark.read.parquet('s3a://finance-data-lake-bronze/' + file_path)    
+        stock_data_df = spark.read.parquet(f's3a://{bronze_bucket}/' + file_path)    
 
         print('Dataframe created succefully from s3 object! \n')
         print('Starting cleanning proccess... \n')

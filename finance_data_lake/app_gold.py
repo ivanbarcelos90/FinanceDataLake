@@ -1,11 +1,18 @@
 import s3_class_file as s3
 from spark_class_file import spark_session
-from pyspark.sql.functions import year, month, dayofmonth, col 
+from pyspark.sql.functions import year, month, dayofmonth, col
+from constants import SILVER_ZONE, GOLD_ZONE, PERFORMANCE_FOLDER
 
-silver_bucket = 'finance-data-lake-silver'
-gold_bucket = 'finance-data-lake-gold'
+silver_bucket = SILVER_ZONE
+gold_bucket = GOLD_ZONE
+
 silver_folder = 'stock_data'
-perfomance_folder = 'stock_performance'
+perfomance_folder = PERFORMANCE_FOLDER
+
+# silver_bucket = 'finance-data-lake-silver'
+# gold_bucket = 'finance-data-lake-gold'
+# silver_folder = 'stock_data'
+# perfomance_folder = 'stock_performance'
 
 def run():
 

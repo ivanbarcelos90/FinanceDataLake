@@ -1,0 +1,23 @@
+[2022-12-26T14:13:34.625+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.create_bucket scheduled__2022-12-25T14:13:32.947636+00:00 [queued]>
+[2022-12-26T14:13:34.634+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.create_bucket scheduled__2022-12-25T14:13:32.947636+00:00 [queued]>
+[2022-12-26T14:13:34.634+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T14:13:34.634+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-26T14:13:34.635+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T14:13:34.655+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): create_bucket> on 2022-12-25 14:13:32.947636+00:00
+[2022-12-26T14:13:34.658+0000] {standard_task_runner.py:55} INFO - Started process 6953 to run task
+[2022-12-26T14:13:34.661+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'finance_data_lake', 'create_bucket', 'scheduled__2022-12-25T14:13:32.947636+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/job_finance_data_lake.py', '--cfg-path', '/tmp/tmptcq52kni']
+[2022-12-26T14:13:34.662+0000] {standard_task_runner.py:83} INFO - Job 58: Subtask create_bucket
+[2022-12-26T14:13:34.718+0000] {task_command.py:376} INFO - Running <TaskInstance: finance_data_lake.create_bucket scheduled__2022-12-25T14:13:32.947636+00:00 [running]> on host 92923f118f93
+[2022-12-26T14:13:34.787+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=finance_data_lake
+AIRFLOW_CTX_TASK_ID=create_bucket
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-25T14:13:32.947636+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-25T14:13:32.947636+00:00
+[2022-12-26T14:13:35.208+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-26T14:13:35.217+0000] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=finance_data_lake, task_id=create_bucket, execution_date=20221225T141332, start_date=20221226T141334, end_date=20221226T141335
+[2022-12-26T14:13:35.275+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-26T14:13:35.298+0000] {taskinstance.py:2623} INFO - 1 downstream tasks scheduled from follow-on schedule check

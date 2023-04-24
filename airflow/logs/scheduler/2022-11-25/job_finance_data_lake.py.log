@@ -1,0 +1,290 @@
+[2022-11-25T11:13:45.396+0000] {processor.py:154} INFO - Started process (PID=637) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:13:45.397+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:13:45.398+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:13:45.398+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:13:45.800+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:13:45.818+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:13:45.818+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:13:45.834+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:13:45.834+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-24T11:13:45.834709+00:00, run_after=2022-11-25T11:13:45.834709+00:00
+[2022-11-25T11:13:45.882+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.488 seconds
+[2022-11-25T11:24:20.173+0000] {processor.py:154} INFO - Started process (PID=24363) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:24:20.174+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:24:20.175+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:24:20.175+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:24:20.665+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:24:20.692+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:24:20.692+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:24:20.719+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:24:20.719+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:24:20.773+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.602 seconds
+[2022-11-25T11:25:02.003+0000] {processor.py:154} INFO - Started process (PID=26408) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:25:02.003+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:25:02.004+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:25:02.004+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:25:02.448+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:25:02.467+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:25:02.466+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:25:02.482+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:25:02.482+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:25:02.521+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.521 seconds
+[2022-11-25T11:25:33.521+0000] {processor.py:154} INFO - Started process (PID=26622) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:25:33.522+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:25:33.523+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:25:33.522+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:25:33.909+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:25:33.925+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:25:33.925+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:25:33.941+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:25:33.941+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:25:33.978+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.459 seconds
+[2022-11-25T11:26:04.042+0000] {processor.py:154} INFO - Started process (PID=26796) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:26:04.042+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:26:04.043+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:26:04.043+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:26:04.470+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:26:04.488+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:26:04.488+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:26:04.505+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:26:04.505+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:26:04.550+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.510 seconds
+[2022-11-25T11:26:35.628+0000] {processor.py:154} INFO - Started process (PID=27599) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:26:35.628+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:26:35.629+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:26:35.629+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:26:36.026+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:26:36.042+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:26:36.042+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:26:36.056+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:26:36.056+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:26:36.092+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.467 seconds
+[2022-11-25T11:27:07.180+0000] {processor.py:154} INFO - Started process (PID=27850) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:07.181+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:27:07.182+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:07.182+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:07.566+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:07.583+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:07.583+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:27:07.600+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:07.600+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:27:07.638+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.459 seconds
+[2022-11-25T11:27:37.690+0000] {processor.py:154} INFO - Started process (PID=27996) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:37.691+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:27:37.692+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:37.692+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:38.127+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:38.120+0000] {dagbag.py:342} ERROR - Failed to import: /workspace/airflow/dags/job_finance_data_lake.py
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/airflow/dags/job_finance_data_lake.py", line 3, in <module>
+    import app_raw, app_cleanning, app_gold, create_bucket
+  File "/workspace/finance_data_lake/app_cleanning.py", line 9, in <module>
+    bronze_bucket = Variable.get("finance-data-lake-bronze")
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable finance-data-lake-bronze does not exist'
+[2022-11-25T11:27:38.128+0000] {processor.py:768} WARNING - No viable dags retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:38.148+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.460 seconds
+[2022-11-25T11:27:59.051+0000] {processor.py:154} INFO - Started process (PID=28209) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:59.053+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:27:59.053+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:59.053+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:59.475+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:27:59.470+0000] {dagbag.py:342} ERROR - Failed to import: /workspace/airflow/dags/job_finance_data_lake.py
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/airflow/dags/job_finance_data_lake.py", line 3, in <module>
+    import app_raw, app_cleanning, app_gold, create_bucket
+  File "/workspace/finance_data_lake/app_cleanning.py", line 9, in <module>
+    bronze_bucket = Variable.get("finance-data-lake-bronze")
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable finance-data-lake-bronze does not exist'
+[2022-11-25T11:27:59.476+0000] {processor.py:768} WARNING - No viable dags retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:27:59.495+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.446 seconds
+[2022-11-25T11:28:29.613+0000] {processor.py:154} INFO - Started process (PID=29770) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:28:29.614+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:28:29.615+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:28:29.615+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:28:30.027+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:28:30.021+0000] {dagbag.py:342} ERROR - Failed to import: /workspace/airflow/dags/job_finance_data_lake.py
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/airflow/dags/job_finance_data_lake.py", line 3, in <module>
+    import app_raw, app_cleanning, app_gold, create_bucket
+  File "/workspace/finance_data_lake/app_cleanning.py", line 9, in <module>
+    bronze_bucket = Variable.get("finance-data-lake-bronze")
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable finance-data-lake-bronze does not exist'
+[2022-11-25T11:28:30.028+0000] {processor.py:768} WARNING - No viable dags retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:28:30.045+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.434 seconds
+[2022-11-25T11:29:00.167+0000] {processor.py:154} INFO - Started process (PID=30266) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:29:00.168+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:29:00.169+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:29:00.169+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:29:00.563+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:29:00.557+0000] {dagbag.py:342} ERROR - Failed to import: /workspace/airflow/dags/job_finance_data_lake.py
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/airflow/dags/job_finance_data_lake.py", line 3, in <module>
+    import app_raw, app_cleanning, app_gold, create_bucket
+  File "/workspace/finance_data_lake/app_cleanning.py", line 9, in <module>
+    bronze_bucket = Variable.get("finance-data-lake-bronze")
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable finance-data-lake-bronze does not exist'
+[2022-11-25T11:29:00.564+0000] {processor.py:768} WARNING - No viable dags retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:29:00.583+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.418 seconds
+[2022-11-25T11:29:30.722+0000] {processor.py:154} INFO - Started process (PID=30425) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:29:30.723+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:29:30.723+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:29:30.723+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:29:31.146+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:29:31.142+0000] {dagbag.py:342} ERROR - Failed to import: /workspace/airflow/dags/job_finance_data_lake.py
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/airflow/dags/job_finance_data_lake.py", line 3, in <module>
+    import app_raw, app_cleanning, app_gold, create_bucket
+  File "/workspace/finance_data_lake/app_cleanning.py", line 9, in <module>
+    bronze_bucket = Variable.get("finance-data-lake-bronze")
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable finance-data-lake-bronze does not exist'
+[2022-11-25T11:29:31.147+0000] {processor.py:768} WARNING - No viable dags retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:29:31.162+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.443 seconds
+[2022-11-25T11:30:01.236+0000] {processor.py:154} INFO - Started process (PID=30522) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:30:01.236+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:30:01.237+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:30:01.237+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:30:01.656+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:30:01.652+0000] {dagbag.py:342} ERROR - Failed to import: /workspace/airflow/dags/job_finance_data_lake.py
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/airflow/dags/job_finance_data_lake.py", line 3, in <module>
+    import app_raw, app_cleanning, app_gold, create_bucket
+  File "/workspace/finance_data_lake/app_gold.py", line 6, in <module>
+    silver_bucket = Variable.get("finance-data-lake-silver")
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable finance-data-lake-silver does not exist'
+[2022-11-25T11:30:01.657+0000] {processor.py:768} WARNING - No viable dags retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:30:01.674+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.440 seconds
+[2022-11-25T11:30:28.577+0000] {processor.py:154} INFO - Started process (PID=30629) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:30:28.578+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:30:28.579+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:30:28.579+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:30:28.995+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:30:29.031+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:30:29.030+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:30:29.047+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:30:29.047+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:30:29.098+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.522 seconds
+[2022-11-25T11:31:00.248+0000] {processor.py:154} INFO - Started process (PID=31798) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:31:00.249+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:31:00.250+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:31:00.250+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:31:00.737+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:31:00.750+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:31:00.750+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:31:00.764+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:31:00.764+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:31:00.804+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.558 seconds
+[2022-11-25T11:31:31.894+0000] {processor.py:154} INFO - Started process (PID=1008) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:31:31.895+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:31:31.895+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:31:31.895+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:31:32.323+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:31:32.336+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:31:32.335+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:31:32.352+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:31:32.352+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:31:32.388+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.496 seconds
+[2022-11-25T11:32:55.632+0000] {processor.py:154} INFO - Started process (PID=690) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:32:55.633+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:32:55.633+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:32:55.633+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:32:56.073+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:32:56.090+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:32:56.090+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:32:56.107+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:32:56.107+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:32:56.142+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.513 seconds
+[2022-11-25T11:33:26.931+0000] {processor.py:154} INFO - Started process (PID=1933) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:33:26.931+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:33:26.932+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:33:26.932+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:33:27.315+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:33:27.340+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:33:27.340+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:33:27.488+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:33:27.488+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:33:27.528+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.599 seconds
+[2022-11-25T11:33:58.548+0000] {processor.py:154} INFO - Started process (PID=3107) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:33:58.548+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:33:58.549+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:33:58.549+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:33:58.895+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:33:58.919+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:33:58.919+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:33:59.022+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:33:59.022+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:33:59.064+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.518 seconds
+[2022-11-25T11:34:29.777+0000] {processor.py:154} INFO - Started process (PID=3953) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:34:29.778+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:34:29.778+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:34:29.778+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:34:30.128+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:34:30.155+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:34:30.155+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:34:30.258+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:34:30.257+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:34:30.296+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.521 seconds
+[2022-11-25T11:34:38.559+0000] {processor.py:154} INFO - Started process (PID=3982) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:34:38.559+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:34:38.560+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:34:38.560+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:34:38.914+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:34:39.049+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:34:39.049+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:34:39.068+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:34:39.068+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:34:39.108+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.552 seconds
+[2022-11-25T11:35:07.845+0000] {processor.py:154} INFO - Started process (PID=4094) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:35:07.845+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:35:07.846+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:35:07.846+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:35:08.205+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:35:08.220+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:35:08.220+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:35:08.239+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:35:08.239+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:35:08.279+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.436 seconds
+[2022-11-25T11:35:38.410+0000] {processor.py:154} INFO - Started process (PID=4213) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:35:38.411+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:35:38.412+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:35:38.412+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:35:38.809+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:35:38.861+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:35:38.860+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:35:38.957+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:35:38.957+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:35:38.997+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.589 seconds
+[2022-11-25T11:36:09.750+0000] {processor.py:154} INFO - Started process (PID=5458) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:36:09.751+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:36:09.752+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:36:09.752+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:36:10.104+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:36:10.130+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:36:10.130+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:36:10.149+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:36:10.149+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:36:10.187+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.439 seconds
+[2022-11-25T11:47:19.167+0000] {processor.py:154} INFO - Started process (PID=19800) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:47:19.168+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:47:19.169+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:47:19.169+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:47:19.598+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:47:19.612+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:47:19.612+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:47:19.626+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:47:19.626+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:47:19.663+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.497 seconds
+[2022-11-25T11:47:57.255+0000] {processor.py:154} INFO - Started process (PID=21185) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:47:57.256+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:47:57.257+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:47:57.257+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:47:57.709+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:47:57.723+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:47:57.723+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:47:57.738+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:47:57.738+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:47:57.776+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.523 seconds
+[2022-11-25T11:48:28.779+0000] {processor.py:154} INFO - Started process (PID=21776) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:48:28.780+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:48:28.780+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:48:28.780+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:48:29.222+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:48:29.238+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:48:29.237+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:48:29.253+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:48:29.253+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:48:29.289+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.512 seconds
+[2022-11-25T11:49:00.430+0000] {processor.py:154} INFO - Started process (PID=22627) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:49:00.430+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:49:00.431+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:49:00.431+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:49:00.870+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:49:00.887+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:49:00.886+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:49:00.904+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:49:00.903+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:49:00.946+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.518 seconds
+[2022-11-25T11:49:32.054+0000] {processor.py:154} INFO - Started process (PID=22989) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:49:32.054+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:49:32.055+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:49:32.055+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:49:32.488+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:49:32.504+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:49:32.503+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:49:32.519+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:49:32.518+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:49:32.554+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.502 seconds
+[2022-11-25T11:50:03.623+0000] {processor.py:154} INFO - Started process (PID=23081) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:50:03.624+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:50:03.625+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:50:03.625+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:50:04.052+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:50:04.066+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:50:04.066+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:50:04.081+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:50:04.081+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:50:04.120+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.499 seconds
+[2022-11-25T11:50:34.958+0000] {processor.py:154} INFO - Started process (PID=23181) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:50:34.959+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:50:34.960+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:50:34.960+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:50:35.385+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:50:35.400+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:50:35.400+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:50:35.416+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:50:35.416+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:50:35.454+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.498 seconds
+[2022-11-25T11:51:06.085+0000] {processor.py:154} INFO - Started process (PID=23273) to work on /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:51:06.085+0000] {processor.py:756} INFO - Processing file /workspace/airflow/dags/job_finance_data_lake.py for tasks to queue
+[2022-11-25T11:51:06.086+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:51:06.086+0000] {dagbag.py:537} INFO - Filling up the DagBag from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:51:06.515+0000] {processor.py:766} INFO - DAG(s) dict_keys(['finance_data_lake']) retrieved from /workspace/airflow/dags/job_finance_data_lake.py
+[2022-11-25T11:51:06.528+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:51:06.528+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-25T11:51:06.542+0000] {logging_mixin.py:137} INFO - [2022-11-25T11:51:06.542+0000] {dag.py:3336} INFO - Setting next_dagrun for finance_data_lake to 2022-11-25T11:13:45.834709+00:00, run_after=2022-11-26T11:13:45.834709+00:00
+[2022-11-25T11:51:06.581+0000] {processor.py:176} INFO - Processing /workspace/airflow/dags/job_finance_data_lake.py took 0.498 seconds

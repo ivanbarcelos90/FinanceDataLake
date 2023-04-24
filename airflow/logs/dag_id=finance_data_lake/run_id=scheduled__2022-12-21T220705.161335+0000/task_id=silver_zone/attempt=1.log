@@ -1,0 +1,52 @@
+[2022-12-22T22:11:17.035+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.silver_zone scheduled__2022-12-21T22:07:05.161335+00:00 [queued]>
+[2022-12-22T22:11:17.045+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.silver_zone scheduled__2022-12-21T22:07:05.161335+00:00 [queued]>
+[2022-12-22T22:11:17.045+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-22T22:11:17.046+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-22T22:11:17.046+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-22T22:11:17.064+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): silver_zone> on 2022-12-21 22:07:05.161335+00:00
+[2022-12-22T22:11:17.069+0000] {standard_task_runner.py:55} INFO - Started process 15407 to run task
+[2022-12-22T22:11:17.071+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'finance_data_lake', 'silver_zone', 'scheduled__2022-12-21T22:07:05.161335+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/job_finance_data_lake.py', '--cfg-path', '/tmp/tmppjx4ga_v']
+[2022-12-22T22:11:17.072+0000] {standard_task_runner.py:83} INFO - Job 51: Subtask silver_zone
+[2022-12-22T22:11:17.131+0000] {task_command.py:376} INFO - Running <TaskInstance: finance_data_lake.silver_zone scheduled__2022-12-21T22:07:05.161335+00:00 [running]> on host 92923f118f93
+[2022-12-22T22:11:17.205+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=finance_data_lake
+AIRFLOW_CTX_TASK_ID=silver_zone
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-21T22:07:05.161335+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-21T22:07:05.161335+00:00
+[2022-12-22T22:11:17.206+0000] {logging_mixin.py:137} INFO - Download object from s3 bucket...
+[2022-12-22T22:11:29.198+0000] {logging_mixin.py:137} INFO - Dataframe created succefully from s3 object!
+[2022-12-22T22:11:29.199+0000] {logging_mixin.py:137} INFO - Starting cleanning proccess...
+[2022-12-22T22:11:29.262+0000] {logging_mixin.py:137} INFO - Cleanning proccess completed succeffully!
+[2022-12-22T22:11:29.317+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/workspace/finance_data_lake/app_cleanning.py", line 18, in run
+    cleanning_data(bronze_bucket)
+  File "/workspace/finance_data_lake/app_cleanning.py", line 43, in cleanning_data
+    df_clean_2 = (df_clean.withColumn('year', year('Date'))
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/pyspark/sql/dataframe.py", line 3036, in withColumn
+    return DataFrame(self._jdf.withColumn(colName, col._jc), self.sparkSession)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/py4j/java_gateway.py", line 1321, in __call__
+    return_value = get_return_value(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/pyspark/sql/utils.py", line 196, in deco
+    raise converted from None
+pyspark.sql.utils.AnalysisException: cannot resolve 'year(Date)' due to data type mismatch: argument 1 requires date type, however, 'Date' is of int type.;
+'Project [Date#0, Open#1, High#2, Low#3, Close#4, Adj Close#5, Volume#6, ticker#7, Event#8, year(Date#0) AS year#28]
++- Filter atleastnnonnulls(9, Date#0, Open#1, High#2, Low#3, Close#4, Adj Close#5, Volume#6, ticker#7, Event#8)
+   +- Relation [Date#0,Open#1,High#2,Low#3,Close#4,Adj Close#5,Volume#6,ticker#7,Event#8] parquet
+
+[2022-12-22T22:11:29.332+0000] {taskinstance.py:1401} INFO - Marking task as FAILED. dag_id=finance_data_lake, task_id=silver_zone, execution_date=20221221T220705, start_date=20221222T221117, end_date=20221222T221129
+[2022-12-22T22:11:29.352+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 51 for task silver_zone (cannot resolve 'year(Date)' due to data type mismatch: argument 1 requires date type, however, 'Date' is of int type.;
+'Project [Date#0, Open#1, High#2, Low#3, Close#4, Adj Close#5, Volume#6, ticker#7, Event#8, year(Date#0) AS year#28]
++- Filter atleastnnonnulls(9, Date#0, Open#1, High#2, Low#3, Close#4, Adj Close#5, Volume#6, ticker#7, Event#8)
+   +- Relation [Date#0,Open#1,High#2,Low#3,Close#4,Adj Close#5,Volume#6,ticker#7,Event#8] parquet
+; 15407)
+[2022-12-22T22:11:29.364+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-22T22:11:29.382+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

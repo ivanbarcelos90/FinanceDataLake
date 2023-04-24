@@ -1,0 +1,40 @@
+[2022-11-16T13:03:27.682+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.create_bronze_bucket manual__2022-11-16T13:03:24.883987+00:00 [queued]>
+[2022-11-16T13:03:27.696+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.create_bronze_bucket manual__2022-11-16T13:03:24.883987+00:00 [queued]>
+[2022-11-16T13:03:27.696+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T13:03:27.697+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T13:03:27.697+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T13:03:27.719+0000] {taskinstance.py:1383} INFO - Executing <Task(S3CreateBucketOperator): create_bronze_bucket> on 2022-11-16 13:03:24.883987+00:00
+[2022-11-16T13:03:27.760+0000] {standard_task_runner.py:55} INFO - Started process 26830 to run task
+[2022-11-16T13:03:27.763+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'finance_data_lake', 'create_bronze_bucket', 'manual__2022-11-16T13:03:24.883987+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/job_finance_data_lake.py', '--cfg-path', '/tmp/tmpn_zkq5bw']
+[2022-11-16T13:03:27.763+0000] {standard_task_runner.py:83} INFO - Job 9: Subtask create_bronze_bucket
+[2022-11-16T13:03:27.840+0000] {task_command.py:376} INFO - Running <TaskInstance: finance_data_lake.create_bronze_bucket manual__2022-11-16T13:03:24.883987+00:00 [running]> on host 92923f118f93
+[2022-11-16T13:03:27.955+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=finance_data_lake
+AIRFLOW_CTX_TASK_ID=create_bronze_bucket
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-16T13:03:24.883987+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-16T13:03:24.883987+00:00
+[2022-11-16T13:03:27.966+0000] {base_aws.py:117} INFO - No connection ID provided. Fallback on boto3 credential strategy (region_name='us-east-1'). See: https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html
+[2022-11-16T13:03:27.979+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2022-11-16T13:03:28.669+0000] {s3.py:225} ERROR - Access to bucket "finance-data-lake-bronze" is forbidden or there was an error with the request
+[2022-11-16T13:03:28.669+0000] {s3.py:228} ERROR - An error occurred (403) when calling the HeadBucket operation: Forbidden
+[2022-11-16T13:03:28.828+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/providers/amazon/aws/operators/s3.py", line 72, in execute
+    s3_hook.create_bucket(bucket_name=self.bucket_name, region_name=self.region_name)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 64, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 265, in create_bucket
+    self.get_conn().create_bucket(Bucket=bucket_name)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/botocore/client.py", line 515, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/botocore/client.py", line 934, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the CreateBucket operation: The AWS Access Key Id you provided does not exist in our records.
+[2022-11-16T13:03:28.835+0000] {taskinstance.py:1401} INFO - Marking task as FAILED. dag_id=finance_data_lake, task_id=create_bronze_bucket, execution_date=20221116T130324, start_date=20221116T130327, end_date=20221116T130328
+[2022-11-16T13:03:28.854+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 9 for task create_bronze_bucket (An error occurred (InvalidAccessKeyId) when calling the CreateBucket operation: The AWS Access Key Id you provided does not exist in our records.; 26830)
+[2022-11-16T13:03:28.898+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-11-16T13:03:28.914+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

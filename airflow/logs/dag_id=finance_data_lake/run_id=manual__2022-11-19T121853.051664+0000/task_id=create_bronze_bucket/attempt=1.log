@@ -1,0 +1,96 @@
+[2022-11-19T12:18:56.697+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.create_bronze_bucket manual__2022-11-19T12:18:53.051664+00:00 [queued]>
+[2022-11-19T12:18:56.705+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: finance_data_lake.create_bronze_bucket manual__2022-11-19T12:18:53.051664+00:00 [queued]>
+[2022-11-19T12:18:56.705+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-19T12:18:56.705+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-19T12:18:56.706+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-19T12:18:56.725+0000] {taskinstance.py:1383} INFO - Executing <Task(S3CreateBucketOperator): create_bronze_bucket> on 2022-11-19 12:18:53.051664+00:00
+[2022-11-19T12:18:56.728+0000] {standard_task_runner.py:55} INFO - Started process 26444 to run task
+[2022-11-19T12:18:56.730+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'finance_data_lake', 'create_bronze_bucket', 'manual__2022-11-19T12:18:53.051664+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/job_finance_data_lake.py', '--cfg-path', '/tmp/tmp3cwhf6pc']
+[2022-11-19T12:18:56.732+0000] {standard_task_runner.py:83} INFO - Job 15: Subtask create_bronze_bucket
+[2022-11-19T12:18:56.784+0000] {task_command.py:376} INFO - Running <TaskInstance: finance_data_lake.create_bronze_bucket manual__2022-11-19T12:18:53.051664+00:00 [running]> on host 92923f118f93
+[2022-11-19T12:18:56.856+0000] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=finance_data_lake
+AIRFLOW_CTX_TASK_ID=create_bronze_bucket
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-19T12:18:53.051664+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-19T12:18:53.051664+00:00
+[2022-11-19T12:18:56.857+0000] {connection.py:426} ERROR - Unable to retrieve connection from secrets backend (EnvironmentVariablesBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/connection.py", line 422, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/secrets/base_secrets.py", line 95, in get_connection
+    value = self.get_conn_value(conn_id=conn_id)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/secrets/environment_variables.py", line 49, in get_conn_value
+    return os.environ.get(CONN_ENV_PREFIX + conn_id.upper())
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/botocore/client.py", line 850, in __getattr__
+    raise AttributeError(
+AttributeError: 'S3' object has no attribute 'upper'
+[2022-11-19T12:18:56.866+0000] {connection.py:426} ERROR - Unable to retrieve connection from secrets backend (MetastoreBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.InterfaceError: Error binding parameter 0 - probably unsupported type.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/models/connection.py", line 422, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/utils/session.py", line 75, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/secrets/metastore.py", line 39, in get_connection
+    conn = session.query(Connection).filter(Connection.conn_id == conn_id).first()
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2823, in first
+    return self.limit(1)._iter().first()
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2915, in _iter
+    result = self.session.execute(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 210, in raise_
+    raise exception
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InterfaceError: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: SELECT connection.password AS connection_password, connection.extra AS connection_extra, connection.id AS connection_id, connection.conn_id AS connection_conn_id, connection.conn_type AS connection_conn_type, connection.description AS connection_description, connection.host AS connection_host, connection.schema AS connection_schema, connection.login AS connection_login, connection.port AS connection_port, connection.is_encrypted AS connection_is_encrypted, connection.is_extra_encrypted AS connection_is_extra_encrypted 
+FROM connection 
+WHERE connection.conn_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (<botocore.client.S3 object at 0x7efdddf8fac0>, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/14/rvf5)
+[2022-11-19T12:18:56.873+0000] {base_aws.py:117} INFO - No connection ID provided. Fallback on boto3 credential strategy (region_name='us-east-1'). See: https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html
+[2022-11-19T12:18:56.883+0000] {credentials.py:1251} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2022-11-19T12:18:57.558+0000] {s3.py:225} ERROR - Access to bucket "finance-data-lake-bronze" is forbidden or there was an error with the request
+[2022-11-19T12:18:57.559+0000] {s3.py:228} ERROR - An error occurred (403) when calling the HeadBucket operation: Forbidden
+[2022-11-19T12:18:57.929+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/providers/amazon/aws/operators/s3.py", line 72, in execute
+    s3_hook.create_bucket(bucket_name=self.bucket_name, region_name=self.region_name)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 64, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 265, in create_bucket
+    self.get_conn().create_bucket(Bucket=bucket_name)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/botocore/client.py", line 515, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/root/.local/share/virtualenvs/workspace-dqq3IVyd/lib/python3.10/site-packages/botocore/client.py", line 934, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the CreateBucket operation: The AWS Access Key Id you provided does not exist in our records.
+[2022-11-19T12:18:57.948+0000] {taskinstance.py:1401} INFO - Marking task as FAILED. dag_id=finance_data_lake, task_id=create_bronze_bucket, execution_date=20221119T121853, start_date=20221119T121856, end_date=20221119T121857
+[2022-11-19T12:18:58.029+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 15 for task create_bronze_bucket (An error occurred (InvalidAccessKeyId) when calling the CreateBucket operation: The AWS Access Key Id you provided does not exist in our records.; 26444)
+[2022-11-19T12:18:58.068+0000] {local_task_job.py:159} INFO - Task exited with return code 1
